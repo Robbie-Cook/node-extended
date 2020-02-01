@@ -9,7 +9,7 @@
 First, make sure you import the helper with
 
 ```node
-import NodeHelper from '@robbie-cook/node-helper
+import NodeHelper from '@robbie-cook/node-helper'
 ```
 
 #
