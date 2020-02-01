@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="141px" height="141px" viewBox="0 0 141 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-189.000000, -8.000000)">
+            <text id="Node-Helper" font-family="Helvetica-Bold, Helvetica" font-size="24" font-weight="bold" line-spacing="28" letter-spacing="0.133333335" fill="#689F5F">
+                <tspan x="188" y="134.764562">Node Helper</tspan>
+            </text>
+            <polygon id="Polygon" fill="#689F5F" points="258 19.7645624 301.7486 51.5497806 285.038122 102.979344 230.961878 102.979344 214.2514 51.5497806"></polygon>
+            <polygon id="Path" fill="#689F5F" points="278.744717 34.8676078 278.744717 8 285.740287 8 285.740287 40.7241944"></polygon>
+            <text id="Node-Helper-loves-yo" font-family="Helvetica-LightOblique, Helvetica" font-size="8" font-style="italic" font-weight="300" letter-spacing="0.0444444451" fill="#636363">
+                <tspan x="217" y="146.764562">Node Helper loves you</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+{
+  "name": "@robbie-cook/node-helper",
+  "private": false,
+  "version": "1.0.0-rc3",
+  "description": "A set of helper functions for node",
+  "main": "./node-helper.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robbie Cook",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^13.6.0"
+  }
+}
