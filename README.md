@@ -4,8 +4,6 @@
   </a>
 </p>
 
-# A set of helper functions for node
-
 ## Getting started
 
 First, make sure you import the helper with
