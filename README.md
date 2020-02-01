@@ -4,6 +4,8 @@
   </a>
 </p>
 
+---
+
 ## Getting started
 
 First, make sure you import the helper with
