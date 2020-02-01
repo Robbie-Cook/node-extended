@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://yarnpkg.com/">
-    <img alt="Yarn" src="banner.svg" width="546">
+    <img alt="Yarn" src="banner.svg" width="400">
   </a>
 </p>
 
