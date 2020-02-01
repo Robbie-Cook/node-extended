@@ -1,4 +1,8 @@
-![NodeHelper loves you](./banner.svg)
+<p align="center">
+  <a href="https://yarnpkg.com/">
+    <img alt="Yarn" src="banner.svg" width="546">
+  </a>
+</p>
 
 # A set of helper functions for node
 
