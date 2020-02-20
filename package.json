@@ -3,13 +3,18 @@
   "private": false,
   "version": "1.0.0-rc3",
   "description": "A set of helper functions for node",
-  "main": "./node-helper.mjs",
+  "main": "./node-helper.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Robbie Cook",
   "license": "ISC",
   "dependencies": {
-    "node": "^13.6.0"
+    "child_process": "^1.0.2",
+    "node": "^13.6.0",
+    "node-fetch": "^2.6.0",
+    "process": "^0.11.10",
+    "readline": "^1.3.0",
+    "util": "^0.12.1"
   }
 }

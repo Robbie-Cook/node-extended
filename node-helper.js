@@ -1,11 +1,14 @@
-import { exec } from 'child_process';
-import util from 'util';
-import process from 'process';
-import readline from 'readline';
+const { exec } = require('child_process');
+const util = require('util');
+const process = require('process');
+const readline = require('readline');
+const fetch = require('node-fetch');
 
 /**
- * Node helper functions
+ * A collection of node helper functions
  */
+
+
 
 const executePromisified = util.promisify(exec);
 
@@ -49,4 +52,20 @@ const isAnswerYes = (input) => {
   return input.match(/[yY]/g);
 };
 
-export default { execute, isAnswerYes, input };
+/** 
+ * Fetch a file from an endpoint
+ * 
+ * @param {string} endpoint
+ * @param {string} endpoint
+ * @returns {Promise<ArrayBuffer>}
+ */
+const fetchFile = async (endpoint, bearerToken) => {
+  const options = bearerToken ? {
+    headers: {'Authorization': `Bearer ${bearerToken}`}
+  } : {};
+  const response = await fetch(endpoint, options);
+  const data = await response.arrayBuffer();
+  return data;
+}
+
+module.exports = { execute, isAnswerYes, input, fetchFile };
