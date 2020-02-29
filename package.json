@@ -1,7 +1,7 @@
 {
   "name": "@robbie-cook/node-helper",
   "private": false,
-  "version": "1.0.0-rc3",
+  "version": "1.0.0-rc5",
   "description": "A set of helper functions for node",
   "main": "./node-helper.js",
   "scripts": {
