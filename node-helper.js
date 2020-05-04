@@ -8,8 +8,6 @@ const fetch = require('node-fetch');
  * A collection of node helper functions
  */
 
-
-
 const executePromisified = util.promisify(exec);
 
 /**
