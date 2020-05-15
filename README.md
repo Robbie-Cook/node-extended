@@ -19,40 +19,26 @@ import NodeHelper from '@robbie-cook/node-helper'
 NodeHelper 😘 (with its endless love) has provided you with the following functions
  
 <!-- AUTO-GENERATED-CONTENT:START (API) -->
-## Constants
-
-<dl>
-<dt><a href="#executePromisified">executePromisified</a></dt>
-<dd><p>A collection of node helper functions</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
-<dt><a href="#execute">execute(command)</a></dt>
+<dt><a href="#execute">execute(command)</a> ⇒ <code>string</code></dt>
 <dd><p>Execute a command</p>
 </dd>
-<dt><a href="#input">input(input)</a></dt>
+<dt><a href="#input">input(input)</a> ⇒ <code>Promise.&lt;string&gt;</code></dt>
 <dd><p>Read input from the user</p>
 </dd>
 <dt><a href="#isAnswerYes">isAnswerYes(input)</a></dt>
 <dd><p>Whether the user accepted the input</p>
 </dd>
-<dt><a href="#fetchFile">fetchFile(endpoint, endpoint)</a> ⇒ <code>Promise.&lt;ArrayBuffer&gt;</code></dt>
+<dt><a href="#fetchFile">fetchFile(endpoint, bearerToken)</a> ⇒ <code>Promise.&lt;ArrayBuffer&gt;</code></dt>
 <dd><p>Fetch a file from an endpoint</p>
 </dd>
 </dl>
 
-<a name="executePromisified"></a>
-
-## executePromisified
-A collection of node helper functions
-
-**Kind**: global constant  
 <a name="execute"></a>
 
-## execute(command)
+## execute(command) ⇒ <code>string</code>
 Execute a command
 
 **Kind**: global function  
@@ -63,7 +49,7 @@ Execute a command
 
 <a name="input"></a>
 
-## input(input)
+## input(input) ⇒ <code>Promise.&lt;string&gt;</code>
 Read input from the user
 
 **Kind**: global function  
@@ -85,7 +71,7 @@ Whether the user accepted the input
 
 <a name="fetchFile"></a>
 
-## fetchFile(endpoint, endpoint) ⇒ <code>Promise.&lt;ArrayBuffer&gt;</code>
+## fetchFile(endpoint, bearerToken) ⇒ <code>Promise.&lt;ArrayBuffer&gt;</code>
 Fetch a file from an endpoint
 
 **Kind**: global function  
@@ -93,7 +79,7 @@ Fetch a file from an endpoint
 | Param | Type |
 | --- | --- |
 | endpoint | <code>string</code> | 
-| endpoint | <code>string</code> | 
+| bearerToken | <code>string</code> | 
 
 
 <!-- AUTO-GENERATED-CONTENT:END -->
