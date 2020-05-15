@@ -8,15 +8,15 @@ const fetch = require('node-fetch');
  * A collection of node helper functions
  */
 
-const executePromisified = util.promisify(exec);
-
 /**
  * Execute a command
  * 
  * @param {string} command 
+ * @returns {string}
  */
 const execute = async (command) => {
   
+  const executePromisified = util.promisify(exec);
   const { stdout, stderr } = await executePromisified(command);
   if (stderr) {
     console.error(stderr);
@@ -28,6 +28,7 @@ const execute = async (command) => {
  * Read input from the user
  * 
  * @param {string} input 
+ * @returns {Promise<string>}
  */
 const input = async (input) => new Promise((resolve) => {
   const rl = readline.createInterface({
@@ -54,7 +55,7 @@ const isAnswerYes = (input) => {
  * Fetch a file from an endpoint
  * 
  * @param {string} endpoint
- * @param {string} endpoint
+ * @param {string?} bearerToken
  * @returns {Promise<ArrayBuffer>}
  */
 const fetchFile = async (endpoint, bearerToken) => {
