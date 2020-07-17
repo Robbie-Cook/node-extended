@@ -14,12 +14,14 @@ import fetch from "node-fetch";
  * @param command
  */
 async function execute(command: string): Promise<string> {
-  const executePromisified = util.promisify(exec);
-  const { stdout, stderr } = await executePromisified(command);
-  if (stderr) {
-    throw stderr;
-  }
-  return stdout;
+  return new Promise((resolve, reject) => {
+    exec(command, (err, stdout, stderr) => {
+      if (err) {
+        reject(stderr);
+      }
+      resolve(stdout);
+    });
+  });
 }
 
 /**
@@ -57,7 +59,10 @@ function isAnswerYes(input: string): boolean | null {
  * @param endpoint
  * @param bearerToken
  */
-async function fetchFile(endpoint: string, bearerToken?: string): Promise<ArrayBuffer> {
+async function fetchFile(
+  endpoint: string,
+  bearerToken?: string
+): Promise<ArrayBuffer> {
   const options = bearerToken
     ? {
         headers: { Authorization: `Bearer ${bearerToken}` },
