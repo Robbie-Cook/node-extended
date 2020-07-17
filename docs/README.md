@@ -1,3 +1,7 @@
+[@robbie-cook/node-helper](README.md) › [Globals](globals.md)
+
+# @robbie-cook/node-helper
+
 <p align="center">
   <a href="https://yarnpkg.com/">
     <img alt="Yarn" src="banner.svg" width="300">
@@ -24,6 +28,13 @@ import NodeHelper from '@robbie-cook/node-helper'
 
 ## Index
 
+### Variables
+
+* [exec](_node_helper_.md#exec)
+* [fetch](_node_helper_.md#const-fetch)
+* [readline](_node_helper_.md#const-readline)
+* [util](_node_helper_.md#const-util)
+
 ### Functions
 
 * [execute](_node_helper_.md#execute)
@@ -31,11 +42,43 @@ import NodeHelper from '@robbie-cook/node-helper'
 * [input](_node_helper_.md#input)
 * [isAnswerYes](_node_helper_.md#isansweryes)
 
+## Variables
+
+###  exec
+
+• **exec**: *any*
+
+*Defined in [node-helper.ts:1](https://github.com/Robbie-Cook/node-helper/blob/6ebb6cc/src/node-helper.ts#L1)*
+
+___
+
+### `Const` fetch
+
+• **fetch**: *any* = require("node-fetch")
+
+*Defined in [node-helper.ts:5](https://github.com/Robbie-Cook/node-helper/blob/6ebb6cc/src/node-helper.ts#L5)*
+
+___
+
+### `Const` readline
+
+• **readline**: *any* = require("readline")
+
+*Defined in [node-helper.ts:4](https://github.com/Robbie-Cook/node-helper/blob/6ebb6cc/src/node-helper.ts#L4)*
+
+___
+
+### `Const` util
+
+• **util**: *any* = require("util")
+
+*Defined in [node-helper.ts:2](https://github.com/Robbie-Cook/node-helper/blob/6ebb6cc/src/node-helper.ts#L2)*
+
 ## Functions
 
 ###  execute
 
-▸ **execute**(`command`: string): *Promise‹string›*
+▸ **execute**(`command`: string): *Promise‹any›*
 
 *Defined in [node-helper.ts:16](https://github.com/Robbie-Cook/node-helper/blob/6ebb6cc/src/node-helper.ts#L16)*
 
@@ -47,13 +90,13 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `command` | string |   |
 
-**Returns:** *Promise‹string›*
+**Returns:** *Promise‹any›*
 
 ___
 
 ###  fetchFile
 
-▸ **fetchFile**(`endpoint`: string, `bearerToken?`: undefined | string): *Promise‹ArrayBuffer›*
+▸ **fetchFile**(`endpoint`: string, `bearerToken?`: undefined | string): *Promise‹any›*
 
 *Defined in [node-helper.ts:60](https://github.com/Robbie-Cook/node-helper/blob/6ebb6cc/src/node-helper.ts#L60)*
 
@@ -66,7 +109,7 @@ Name | Type | Description |
 `endpoint` | string | - |
 `bearerToken?` | undefined &#124; string |   |
 
-**Returns:** *Promise‹ArrayBuffer›*
+**Returns:** *Promise‹any›*
 
 ___
 

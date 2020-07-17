@@ -1,23 +1,3 @@
-<p align="center">
-  <a href="https://yarnpkg.com/">
-    <img alt="Yarn" src="banner.svg" width="300">
-  </a>
-</p>
-
----
-
-## Getting started
-
-First, make sure you import the helper with
-
-```node
-import NodeHelper from '@robbie-cook/node-helper'
-```
-
-#
-
- 
-<!-- AUTO-GENERATED-CONTENT:START (API) -->
 [@robbie-cook/node-helper](../README.md) › [Globals](../globals.md) › ["node-helper"](_node_helper_.md)
 
 # Module: "node-helper"
@@ -103,5 +83,3 @@ Name | Type | Description |
 `input` | string |   |
 
 **Returns:** *null | RegExpMatchArray‹›*
-
-<!-- AUTO-GENERATED-CONTENT:END -->
