@@ -17,7 +17,7 @@
 
 ▸ **execute**(`command`: string): *Promise‹string›*
 
-*Defined in [node-helper.ts:16](https://github.com/Robbie-Cook/node-helper/blob/6ebb6cc/src/node-helper.ts#L16)*
+*Defined in [node-helper.ts:16](https://github.com/Robbie-Cook/node-helper/blob/a96afcd/src/node-helper.ts#L16)*
 
 Execute a command
 
@@ -35,7 +35,7 @@ ___
 
 ▸ **fetchFile**(`endpoint`: string, `bearerToken?`: undefined | string): *Promise‹ArrayBuffer›*
 
-*Defined in [node-helper.ts:60](https://github.com/Robbie-Cook/node-helper/blob/6ebb6cc/src/node-helper.ts#L60)*
+*Defined in [node-helper.ts:60](https://github.com/Robbie-Cook/node-helper/blob/a96afcd/src/node-helper.ts#L60)*
 
 Fetch a file from an endpoint
 
@@ -52,9 +52,9 @@ ___
 
 ###  input
 
-▸ **input**(`input`: string): *Promise‹unknown›*
+▸ **input**(`input`: string): *Promise‹string›*
 
-*Defined in [node-helper.ts:31](https://github.com/Robbie-Cook/node-helper/blob/6ebb6cc/src/node-helper.ts#L31)*
+*Defined in [node-helper.ts:31](https://github.com/Robbie-Cook/node-helper/blob/a96afcd/src/node-helper.ts#L31)*
 
 Read input from the user
 
@@ -64,15 +64,15 @@ Name | Type |
 ------ | ------ |
 `input` | string |
 
-**Returns:** *Promise‹unknown›*
+**Returns:** *Promise‹string›*
 
 ___
 
 ###  isAnswerYes
 
-▸ **isAnswerYes**(`input`: string): *null | RegExpMatchArray‹›*
+▸ **isAnswerYes**(`input`: string): *boolean | null*
 
-*Defined in [node-helper.ts:50](https://github.com/Robbie-Cook/node-helper/blob/6ebb6cc/src/node-helper.ts#L50)*
+*Defined in [node-helper.ts:50](https://github.com/Robbie-Cook/node-helper/blob/a96afcd/src/node-helper.ts#L50)*
 
 Whether the user accepted the input
 
@@ -82,4 +82,4 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `input` | string |   |
 
-**Returns:** *null | RegExpMatchArray‹›*
+**Returns:** *boolean | null*
