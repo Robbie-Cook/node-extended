@@ -40,7 +40,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var child_process_1 = require("child_process");
-var util_1 = __importDefault(require("util"));
 var process_1 = __importDefault(require("process"));
 var readline_1 = __importDefault(require("readline"));
 var node_fetch_1 = __importDefault(require("node-fetch"));
@@ -54,19 +53,15 @@ var node_fetch_1 = __importDefault(require("node-fetch"));
  */
 function execute(command) {
     return __awaiter(this, void 0, void 0, function () {
-        var executePromisified, _a, stdout, stderr;
-        return __generator(this, function (_b) {
-            switch (_b.label) {
-                case 0:
-                    executePromisified = util_1.default.promisify(child_process_1.exec);
-                    return [4 /*yield*/, executePromisified(command)];
-                case 1:
-                    _a = _b.sent(), stdout = _a.stdout, stderr = _a.stderr;
-                    if (stderr) {
-                        throw stderr;
-                    }
-                    return [2 /*return*/, stdout];
-            }
+        return __generator(this, function (_a) {
+            return [2 /*return*/, new Promise(function (resolve, reject) {
+                    child_process_1.exec(command, function (err, stdout, stderr) {
+                        if (err) {
+                            reject(stderr);
+                        }
+                        resolve(stdout);
+                    });
+                })];
         });
     });
 }
