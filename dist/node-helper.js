@@ -39,11 +39,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var exec = require('child_process').exec;
-var util = require('util');
+var child_process_1 = require("child_process");
+var util_1 = __importDefault(require("util"));
 var process_1 = __importDefault(require("process"));
-var readline = require('readline');
-var fetch = require('node-fetch');
+var readline_1 = __importDefault(require("readline"));
+var node_fetch_1 = __importDefault(require("node-fetch"));
 /**
  * A collection of node helper functions
  */
@@ -52,73 +52,81 @@ var fetch = require('node-fetch');
  *
  * @param command
  */
-var execute = function (command) { return __awaiter(void 0, void 0, void 0, function () {
-    var executePromisified, _a, stdout, stderr;
-    return __generator(this, function (_b) {
-        switch (_b.label) {
-            case 0:
-                executePromisified = util.promisify(exec);
-                return [4 /*yield*/, executePromisified(command)];
-            case 1:
-                _a = _b.sent(), stdout = _a.stdout, stderr = _a.stderr;
-                if (stderr) {
-                    console.error(stderr);
-                }
-                return [2 /*return*/, stdout];
-        }
+function execute(command) {
+    return __awaiter(this, void 0, void 0, function () {
+        var executePromisified, _a, stdout, stderr;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    executePromisified = util_1.default.promisify(child_process_1.exec);
+                    return [4 /*yield*/, executePromisified(command)];
+                case 1:
+                    _a = _b.sent(), stdout = _a.stdout, stderr = _a.stderr;
+                    if (stderr) {
+                        throw stderr;
+                    }
+                    return [2 /*return*/, stdout];
+            }
+        });
     });
-}); };
+}
 /**
  * Read input from the user
  *
  * @param input
  * @returns {Promise<string>}
  */
-var input = function (input) { return __awaiter(void 0, void 0, void 0, function () {
-    return __generator(this, function (_a) {
-        return [2 /*return*/, new Promise(function (resolve) {
-                var rl = readline.createInterface({
-                    input: process_1.default.stdin,
-                    output: process_1.default.stdout
-                });
-                rl.question(input + " ", function (answer) {
-                    rl.close();
-                    resolve(answer);
-                });
-            })];
+function input(input) {
+    return __awaiter(this, void 0, void 0, function () {
+        return __generator(this, function (_a) {
+            return [2 /*return*/, new Promise(function (resolve) {
+                    var rl = readline_1.default.createInterface({
+                        input: process_1.default.stdin,
+                        output: process_1.default.stdout,
+                    });
+                    rl.question(input + " ", function (answer) {
+                        rl.close();
+                        resolve(answer);
+                    });
+                })];
+        });
     });
-}); };
+}
 /**
  * Whether the user accepted the input
  *
  * @param input
  */
-var isAnswerYes = function (input) {
-    return input.match(/[yY]/g);
-};
+function isAnswerYes(input) {
+    return !!input.match(/[yY]/g);
+}
 /**
  * Fetch a file from an endpoint
  *
  * @param endpoint
  * @param bearerToken
  */
-var fetchFile = function (endpoint, bearerToken) { return __awaiter(void 0, void 0, void 0, function () {
-    var options, response, data;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0:
-                options = bearerToken ? {
-                    headers: { 'Authorization': "Bearer " + bearerToken }
-                } : {};
-                return [4 /*yield*/, fetch(endpoint, options)];
-            case 1:
-                response = _a.sent();
-                return [4 /*yield*/, response.arrayBuffer()];
-            case 2:
-                data = _a.sent();
-                return [2 /*return*/, data];
-        }
+function fetchFile(endpoint, bearerToken) {
+    return __awaiter(this, void 0, void 0, function () {
+        var options, response, data;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    options = bearerToken
+                        ? {
+                            headers: { Authorization: "Bearer " + bearerToken },
+                        }
+                        : {};
+                    return [4 /*yield*/, node_fetch_1.default(endpoint, options)];
+                case 1:
+                    response = _a.sent();
+                    return [4 /*yield*/, response.arrayBuffer()];
+                case 2:
+                    data = _a.sent();
+                    return [2 /*return*/, data];
+            }
+        });
     });
-}); };
-module.exports = { execute: execute, isAnswerYes: isAnswerYes, input: input, fetchFile: fetchFile };
+}
+exports.default = { execute: execute, isAnswerYes: isAnswerYes, input: input, fetchFile: fetchFile };
 //# sourceMappingURL=node-helper.js.map

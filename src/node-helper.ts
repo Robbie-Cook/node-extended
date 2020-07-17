@@ -13,11 +13,11 @@ import fetch from "node-fetch";
  *
  * @param command
  */
-async function execute(command: string) {
+async function execute(command: string): Promise<string> {
   const executePromisified = util.promisify(exec);
   const { stdout, stderr } = await executePromisified(command);
   if (stderr) {
-    console.error(stderr);
+    throw stderr;
   }
   return stdout;
 }
@@ -28,7 +28,7 @@ async function execute(command: string) {
  * @param input
  * @returns {Promise<string>}
  */
-async function input(input: string) {
+async function input(input: string): Promise<string> {
   return new Promise((resolve) => {
     const rl = readline.createInterface({
       input: process.stdin,
@@ -47,8 +47,8 @@ async function input(input: string) {
  *
  * @param input
  */
-function isAnswerYes(input: string) {
-  return input.match(/[yY]/g);
+function isAnswerYes(input: string): boolean | null {
+  return !!input.match(/[yY]/g);
 }
 
 /**
@@ -57,7 +57,7 @@ function isAnswerYes(input: string) {
  * @param endpoint
  * @param bearerToken
  */
-async function fetchFile(endpoint: string, bearerToken?: string) {
+async function fetchFile(endpoint: string, bearerToken?: string): Promise<ArrayBuffer> {
   const options = bearerToken
     ? {
         headers: { Authorization: `Bearer ${bearerToken}` },
@@ -68,4 +68,4 @@ async function fetchFile(endpoint: string, bearerToken?: string) {
   return data;
 }
 
-module.exports = { execute, isAnswerYes, input, fetchFile };
+export default { execute, isAnswerYes, input, fetchFile };
