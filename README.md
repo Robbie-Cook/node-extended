@@ -13,6 +13,11 @@ First, make sure you import the helper with
 ```node
 import NodeHelper from '@robbie-cook/node-helper'
 ```
+or, equally,
+
+```node
+const NodeHelper = require('@robbie-cook/node-helper');
+```
 
 #
 
