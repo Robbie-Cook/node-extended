@@ -6,6 +6,8 @@
 
 ---
 
+Welcome to Node Helper! Contributions are always welcome, but please make an issue first.
+
 ## Getting started
 
 First, make sure you import the helper with
@@ -21,6 +23,7 @@ const NodeHelper = require('@robbie-cook/node-helper');
 
 #
 
+## API
  
 <!-- AUTO-GENERATED-CONTENT:START (API) -->
 [@robbie-cook/node-helper](../README.md) › [Globals](../globals.md) › ["node-helper"](_node_helper_.md)
