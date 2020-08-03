@@ -10,6 +10,8 @@
 
 ---
 
+Welcome to Node Helper! Contributions are always welcome, but please make an issue first.
+
 ## Getting started
 
 First, make sure you import the helper with
@@ -17,9 +19,15 @@ First, make sure you import the helper with
 ```node
 import NodeHelper from '@robbie-cook/node-helper'
 ```
+or, equally,
+
+```node
+const NodeHelper = require('@robbie-cook/node-helper');
+```
 
 #
 
+## API
  
 <!-- AUTO-GENERATED-CONTENT:START (API) -->
 [@robbie-cook/node-helper](../README.md) › [Globals](../globals.md) › ["node-helper"](_node_helper_.md)
@@ -41,7 +49,7 @@ import NodeHelper from '@robbie-cook/node-helper'
 
 ▸ **execute**(`command`: string): *Promise‹string›*
 
-*Defined in [node-helper.ts:16](https://github.com/Robbie-Cook/node-helper/blob/3606e86/src/node-helper.ts#L16)*
+*Defined in [node-helper.ts:16](https://github.com/Robbie-Cook/node-helper/blob/c99fd1f/src/node-helper.ts#L16)*
 
 Execute a command
 
@@ -59,7 +67,7 @@ ___
 
 ▸ **fetchFile**(`endpoint`: string, `bearerToken?`: undefined | string): *Promise‹ArrayBuffer›*
 
-*Defined in [node-helper.ts:60](https://github.com/Robbie-Cook/node-helper/blob/3606e86/src/node-helper.ts#L60)*
+*Defined in [node-helper.ts:62](https://github.com/Robbie-Cook/node-helper/blob/c99fd1f/src/node-helper.ts#L62)*
 
 Fetch a file from an endpoint
 
@@ -78,7 +86,7 @@ ___
 
 ▸ **input**(`input`: string): *Promise‹string›*
 
-*Defined in [node-helper.ts:31](https://github.com/Robbie-Cook/node-helper/blob/3606e86/src/node-helper.ts#L31)*
+*Defined in [node-helper.ts:33](https://github.com/Robbie-Cook/node-helper/blob/c99fd1f/src/node-helper.ts#L33)*
 
 Read input from the user
 
@@ -96,7 +104,7 @@ ___
 
 ▸ **isAnswerYes**(`input`: string): *boolean | null*
 
-*Defined in [node-helper.ts:50](https://github.com/Robbie-Cook/node-helper/blob/3606e86/src/node-helper.ts#L50)*
+*Defined in [node-helper.ts:52](https://github.com/Robbie-Cook/node-helper/blob/c99fd1f/src/node-helper.ts#L52)*
 
 Whether the user accepted the input
 
