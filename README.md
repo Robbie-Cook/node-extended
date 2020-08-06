@@ -35,6 +35,7 @@ const NodeHelper = require('@robbie-cook/node-helper');
 ### Functions
 
 * [execute](_node_helper_.md#execute)
+* [fetch](_node_helper_.md#fetch)
 * [fetchFile](_node_helper_.md#fetchfile)
 * [input](_node_helper_.md#input)
 * [isAnswerYes](_node_helper_.md#isansweryes)
@@ -45,7 +46,7 @@ const NodeHelper = require('@robbie-cook/node-helper');
 
 ▸ **execute**(`command`: string): *Promise‹string›*
 
-*Defined in [node-helper.ts:16](https://github.com/Robbie-Cook/node-helper/blob/dcbac12/src/node-helper.ts#L16)*
+*Defined in [node-helper.ts:16](https://github.com/Robbie-Cook/node-helper/blob/0a4fd77/src/node-helper.ts#L16)*
 
 Execute a command
 
@@ -59,11 +60,31 @@ Name | Type | Description |
 
 ___
 
+###  fetch
+
+▸ **fetch**(`endpoint`: string, `bearerToken?`: undefined | string): *Promise‹Response›*
+
+*Defined in [node-helper.ts:83](https://github.com/Robbie-Cook/node-helper/blob/0a4fd77/src/node-helper.ts#L83)*
+
+Fetch anything.
+Uses node-fetch under the hood.
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`endpoint` | string | - |
+`bearerToken?` | undefined &#124; string |   |
+
+**Returns:** *Promise‹Response›*
+
+___
+
 ###  fetchFile
 
 ▸ **fetchFile**(`endpoint`: string, `bearerToken?`: undefined | string): *Promise‹ArrayBuffer›*
 
-*Defined in [node-helper.ts:62](https://github.com/Robbie-Cook/node-helper/blob/dcbac12/src/node-helper.ts#L62)*
+*Defined in [node-helper.ts:62](https://github.com/Robbie-Cook/node-helper/blob/0a4fd77/src/node-helper.ts#L62)*
 
 Fetch a file from an endpoint
 
@@ -82,7 +103,7 @@ ___
 
 ▸ **input**(`input`: string): *Promise‹string›*
 
-*Defined in [node-helper.ts:33](https://github.com/Robbie-Cook/node-helper/blob/dcbac12/src/node-helper.ts#L33)*
+*Defined in [node-helper.ts:33](https://github.com/Robbie-Cook/node-helper/blob/0a4fd77/src/node-helper.ts#L33)*
 
 Read input from the user
 
@@ -100,7 +121,7 @@ ___
 
 ▸ **isAnswerYes**(`input`: string): *boolean | null*
 
-*Defined in [node-helper.ts:52](https://github.com/Robbie-Cook/node-helper/blob/dcbac12/src/node-helper.ts#L52)*
+*Defined in [node-helper.ts:52](https://github.com/Robbie-Cook/node-helper/blob/0a4fd77/src/node-helper.ts#L52)*
 
 Whether the user accepted the input
 

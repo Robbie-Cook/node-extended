@@ -123,5 +123,31 @@ function fetchFile(endpoint, bearerToken) {
         });
     });
 }
-exports.default = { execute: execute, isAnswerYes: isAnswerYes, input: input, fetchFile: fetchFile };
+/**
+ * Fetch anything.
+ * Uses node-fetch under the hood.
+ *
+ * @param endpoint
+ * @param bearerToken
+ */
+function fetch(endpoint, bearerToken) {
+    return __awaiter(this, void 0, void 0, function () {
+        var options, response;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    options = bearerToken
+                        ? {
+                            headers: { Authorization: "Bearer " + bearerToken },
+                        }
+                        : {};
+                    return [4 /*yield*/, node_fetch_1.default(endpoint, options)];
+                case 1:
+                    response = _a.sent();
+                    return [2 /*return*/, response];
+            }
+        });
+    });
+}
+exports.default = { execute: execute, isAnswerYes: isAnswerYes, input: input, fetchFile: fetchFile, fetch: fetch };
 //# sourceMappingURL=node-helper.js.map

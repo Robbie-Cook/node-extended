@@ -1,3 +1,4 @@
+import { Response } from "node-fetch";
 /**
  * A collection of node helper functions
  */
@@ -27,10 +28,19 @@ declare function isAnswerYes(input: string): boolean | null;
  * @param bearerToken
  */
 declare function fetchFile(endpoint: string, bearerToken?: string): Promise<ArrayBuffer>;
+/**
+ * Fetch anything.
+ * Uses node-fetch under the hood.
+ *
+ * @param endpoint
+ * @param bearerToken
+ */
+declare function fetch(endpoint: string, bearerToken?: string): Promise<Response>;
 declare const _default: {
     execute: typeof execute;
     isAnswerYes: typeof isAnswerYes;
     input: typeof input;
     fetchFile: typeof fetchFile;
+    fetch: typeof fetch;
 };
 export default _default;
