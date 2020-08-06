@@ -17,7 +17,7 @@
 
 ▸ **execute**(`command`: string): *Promise‹string›*
 
-*Defined in [node-helper.ts:16](https://github.com/Robbie-Cook/node-helper/blob/8d84224/src/node-helper.ts#L16)*
+*Defined in [node-helper.ts:16](https://github.com/Robbie-Cook/node-helper/blob/dcbac12/src/node-helper.ts#L16)*
 
 Execute a command
 
@@ -35,7 +35,7 @@ ___
 
 ▸ **fetchFile**(`endpoint`: string, `bearerToken?`: undefined | string): *Promise‹ArrayBuffer›*
 
-*Defined in [node-helper.ts:62](https://github.com/Robbie-Cook/node-helper/blob/8d84224/src/node-helper.ts#L62)*
+*Defined in [node-helper.ts:62](https://github.com/Robbie-Cook/node-helper/blob/dcbac12/src/node-helper.ts#L62)*
 
 Fetch a file from an endpoint
 
@@ -54,7 +54,7 @@ ___
 
 ▸ **input**(`input`: string): *Promise‹string›*
 
-*Defined in [node-helper.ts:33](https://github.com/Robbie-Cook/node-helper/blob/8d84224/src/node-helper.ts#L33)*
+*Defined in [node-helper.ts:33](https://github.com/Robbie-Cook/node-helper/blob/dcbac12/src/node-helper.ts#L33)*
 
 Read input from the user
 
@@ -72,7 +72,7 @@ ___
 
 ▸ **isAnswerYes**(`input`: string): *boolean | null*
 
-*Defined in [node-helper.ts:52](https://github.com/Robbie-Cook/node-helper/blob/8d84224/src/node-helper.ts#L52)*
+*Defined in [node-helper.ts:52](https://github.com/Robbie-Cook/node-helper/blob/dcbac12/src/node-helper.ts#L52)*
 
 Whether the user accepted the input
 
