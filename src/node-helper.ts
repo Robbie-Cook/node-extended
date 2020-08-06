@@ -2,7 +2,7 @@ import { exec } from "child_process";
 import util from "util";
 import process from "process";
 import readline from "readline";
-import fetch from "node-fetch";
+import nodeFetch, { Response } from "node-fetch";
 
 /**
  * A collection of node helper functions
@@ -68,9 +68,29 @@ async function fetchFile(
         headers: { Authorization: `Bearer ${bearerToken}` },
       }
     : {};
-  const response = await fetch(endpoint, options);
+  const response = await nodeFetch(endpoint, options);
   const data = await response.arrayBuffer();
   return data;
 }
 
-export default { execute, isAnswerYes, input, fetchFile };
+/**
+ * Fetch anything.
+ * Uses node-fetch under the hood.
+ *
+ * @param endpoint
+ * @param bearerToken
+ */
+async function fetch(
+  endpoint: string,
+  bearerToken?: string
+): Promise<Response> {
+  const options = bearerToken
+    ? {
+        headers: { Authorization: `Bearer ${bearerToken}` },
+      }
+    : {};
+  const response = await nodeFetch(endpoint, options);
+  return response;
+}
+
+export default { execute, isAnswerYes, input, fetchFile, fetch };
