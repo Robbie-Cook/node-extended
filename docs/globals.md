@@ -6,4 +6,4 @@
 
 ### Modules
 
-* ["node-helper"](modules/_node_helper_.md)
+* ["node-extended"](modules/_node_extended_.md)

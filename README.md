@@ -26,19 +26,19 @@ const NodeHelper = require('node-extended');
 ## API
  
 <!-- AUTO-GENERATED-CONTENT:START (API) -->
-[node-extended](../README.md) › [Globals](../globals.md) › ["node-helper"](_node_helper_.md)
+[node-extended](../README.md) › [Globals](../globals.md) › ["node-extended"](_node_extended_.md)
 
-# Module: "node-helper"
+# Module: "node-extended"
 
 ## Index
 
 ### Functions
 
-* [execute](_node_helper_.md#execute)
-* [fetch](_node_helper_.md#fetch)
-* [fetchFile](_node_helper_.md#fetchfile)
-* [input](_node_helper_.md#input)
-* [isAnswerYes](_node_helper_.md#isansweryes)
+* [execute](_node_extended_.md#execute)
+* [fetch](_node_extended_.md#fetch)
+* [fetchFile](_node_extended_.md#fetchfile)
+* [input](_node_extended_.md#input)
+* [isAnswerYes](_node_extended_.md#isansweryes)
 
 ## Functions
 
@@ -46,7 +46,7 @@ const NodeHelper = require('node-extended');
 
 ▸ **execute**(`command`: string): *Promise‹string›*
 
-*Defined in [node-helper.ts:16](https://github.com/Robbie-Cook/node-helper/blob/47faba3/src/node-helper.ts#L16)*
+*Defined in [node-extended.ts:16](https://github.com/Robbie-Cook/node-helper/blob/92db4fb/src/node-extended.ts#L16)*
 
 Execute a command
 
@@ -64,7 +64,7 @@ ___
 
 ▸ **fetch**(`endpoint`: string, `bearerToken?`: undefined | string): *Promise‹Response›*
 
-*Defined in [node-helper.ts:83](https://github.com/Robbie-Cook/node-helper/blob/47faba3/src/node-helper.ts#L83)*
+*Defined in [node-extended.ts:83](https://github.com/Robbie-Cook/node-helper/blob/92db4fb/src/node-extended.ts#L83)*
 
 Fetch anything.
 Uses node-fetch under the hood.
@@ -84,7 +84,7 @@ ___
 
 ▸ **fetchFile**(`endpoint`: string, `bearerToken?`: undefined | string): *Promise‹ArrayBuffer›*
 
-*Defined in [node-helper.ts:62](https://github.com/Robbie-Cook/node-helper/blob/47faba3/src/node-helper.ts#L62)*
+*Defined in [node-extended.ts:62](https://github.com/Robbie-Cook/node-helper/blob/92db4fb/src/node-extended.ts#L62)*
 
 Fetch a file from an endpoint
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **input**(`input`: string): *Promise‹string›*
 
-*Defined in [node-helper.ts:33](https://github.com/Robbie-Cook/node-helper/blob/47faba3/src/node-helper.ts#L33)*
+*Defined in [node-extended.ts:33](https://github.com/Robbie-Cook/node-helper/blob/92db4fb/src/node-extended.ts#L33)*
 
 Read input from the user
 
@@ -121,7 +121,7 @@ ___
 
 ▸ **isAnswerYes**(`input`: string): *boolean | null*
 
-*Defined in [node-helper.ts:52](https://github.com/Robbie-Cook/node-helper/blob/47faba3/src/node-helper.ts#L52)*
+*Defined in [node-extended.ts:52](https://github.com/Robbie-Cook/node-helper/blob/92db4fb/src/node-extended.ts#L52)*
 
 Whether the user accepted the input
 

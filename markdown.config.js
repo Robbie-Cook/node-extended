@@ -8,7 +8,7 @@ module.exports = {
     /* Match <!-- AUTO-GENERATED-CONTENT:START (API) --> */
     API(content, options) {
       execSync(`npx typedoc --plugin typedoc-plugin-markdown src/`);
-      const string = fs.readFileSync('./docs/modules/_node_helper_.md');
+      const string = fs.readFileSync('./docs/modules/_node_extended_.md');
       return string;
     },
   },
