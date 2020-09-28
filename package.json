@@ -5,7 +5,7 @@
   "description": "A set of helper functions for node",
   "main": "./dist/node-helper.js",
   "scripts": {
-    "prepublishOnly": "npm run test && npm run build && npm run generate-docs",
+    "prepublishOnly": "npm run build && npm run test && npm run generate-docs",
     "generate-docs": "md-magic --path 'README.md' --config ./markdown.config.js",
     "build": "tsc",
     "start": "tsc --watch",

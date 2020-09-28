@@ -96,4 +96,4 @@ async function fetch(
 export default { execute, isAnswerYes, input, fetchFile, fetch };
 
 // For require();
-exports = { execute, isAnswerYes, input, fetchFile, fetch };
+exports.NodeExtended = ({ execute, isAnswerYes, input, fetchFile, fetch });
