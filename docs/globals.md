@@ -1,6 +1,6 @@
-[@robbie-cook/node-helper](README.md) › [Globals](globals.md)
+[node-extended](README.md) › [Globals](globals.md)
 
-# @robbie-cook/node-helper
+# node-extended
 
 ## Index
 

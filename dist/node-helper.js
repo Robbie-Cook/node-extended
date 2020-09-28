@@ -150,4 +150,6 @@ function fetch(endpoint, bearerToken) {
     });
 }
 exports.default = { execute: execute, isAnswerYes: isAnswerYes, input: input, fetchFile: fetchFile, fetch: fetch };
+// For require();
+exports = { execute: execute, isAnswerYes: isAnswerYes, input: input, fetchFile: fetchFile, fetch: fetch };
 //# sourceMappingURL=node-helper.js.map
