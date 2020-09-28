@@ -1,6 +1,6 @@
 const { spawn, execSync } = require("child_process");
 const fs = require('fs');
-const ENTRY_FILE = "./src/node-helper.ts";
+const ENTRY_FILE = "./src/node-extended.ts";
 
 /* CLI markdown.config.js file example */
 module.exports = {
