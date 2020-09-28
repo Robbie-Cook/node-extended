@@ -13,12 +13,12 @@ Welcome to Node Helper! Contributions are always welcome, but please make an iss
 First, make sure you import the helper with
 
 ```node
-import NodeHelper from '@robbie-cook/node-helper'
+import NodeHelper from '@robbie-cook/node-extended'
 ```
 or, equally,
 
 ```node
-const NodeHelper = require('@robbie-cook/node-helper');
+const NodeHelper = require('@robbie-cook/node-extended');
 ```
 
 #

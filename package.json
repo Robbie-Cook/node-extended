@@ -39,10 +39,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Robbie-Cook/node-helper.git"
+    "url": "git+https://github.com/Robbie-Cook/node-extended.git"
   },
   "bugs": {
-    "url": "https://github.com/Robbie-Cook/node-helper/issues"
+    "url": "https://github.com/Robbie-Cook/node-extended/issues"
   },
-  "homepage": "https://github.com/Robbie-Cook/node-helper#readme"
+  "homepage": "https://github.com/Robbie-Cook/node-extended#readme"
 }
