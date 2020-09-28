@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.3",
   "description": "A set of helper functions for node",
-  "main": "./dist/node-helper.js",
+  "main": "./dist/node-extended.js",
   "scripts": {
     "prepublishOnly": "npm run build && npm run test && npm run generate-docs",
     "generate-docs": "md-magic --path 'README.md' --config ./markdown.config.js",
