@@ -28,7 +28,6 @@ async function execute(command: string): Promise<string> {
  * Read input from the user
  *
  * @param input
- * @returns {Promise<string>}
  */
 async function input(input: string): Promise<string> {
   return new Promise((resolve) => {
@@ -54,26 +53,6 @@ function isAnswerYes(input: string): boolean | null {
 }
 
 /**
- * Fetch a file from an endpoint
- *
- * @param endpoint
- * @param bearerToken
- */
-async function fetchFile(
-  endpoint: string,
-  bearerToken?: string
-): Promise<ArrayBuffer> {
-  const options = bearerToken
-    ? {
-        headers: { Authorization: `Bearer ${bearerToken}` },
-      }
-    : {};
-  const response = await nodeFetch(endpoint, options);
-  const data = await response.arrayBuffer();
-  return data;
-}
-
-/**
  * Fetch anything.
  * Uses node-fetch under the hood.
  *
@@ -93,7 +72,7 @@ async function fetch(
   return response;
 }
 
-export default { execute, isAnswerYes, input, fetchFile, fetch };
+export default { execute, isAnswerYes, input, fetch };
 
 // For require();
-exports.NodeExtended = ({ execute, isAnswerYes, input, fetchFile, fetch });
+export const NodeExtended = { execute, isAnswerYes, input, fetch };
