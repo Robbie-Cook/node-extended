@@ -8,9 +8,12 @@
 
 * [execute](_node_extended_.md#execute)
 * [fetch](_node_extended_.md#fetch)
-* [fetchFile](_node_extended_.md#fetchfile)
 * [input](_node_extended_.md#input)
 * [isAnswerYes](_node_extended_.md#isansweryes)
+
+### Object literals
+
+* [NodeExtended](_node_extended_.md#const-nodeextended)
 
 ## Functions
 
@@ -18,7 +21,7 @@
 
 ▸ **execute**(`command`: string): *Promise‹string›*
 
-*Defined in [node-extended.ts:16](https://github.com/Robbie-Cook/node-helper/blob/1331a69/src/node-extended.ts#L16)*
+*Defined in [node-extended.ts:16](https://github.com/Robbie-Cook/node-helper/blob/ea2edce/src/node-extended.ts#L16)*
 
 Execute a command
 
@@ -36,7 +39,7 @@ ___
 
 ▸ **fetch**(`endpoint`: string, `bearerToken?`: undefined | string): *Promise‹Response›*
 
-*Defined in [node-extended.ts:83](https://github.com/Robbie-Cook/node-helper/blob/1331a69/src/node-extended.ts#L83)*
+*Defined in [node-extended.ts:62](https://github.com/Robbie-Cook/node-helper/blob/ea2edce/src/node-extended.ts#L62)*
 
 Fetch anything.
 Uses node-fetch under the hood.
@@ -52,38 +55,19 @@ Name | Type | Description |
 
 ___
 
-###  fetchFile
-
-▸ **fetchFile**(`endpoint`: string, `bearerToken?`: undefined | string): *Promise‹ArrayBuffer›*
-
-*Defined in [node-extended.ts:62](https://github.com/Robbie-Cook/node-helper/blob/1331a69/src/node-extended.ts#L62)*
-
-Fetch a file from an endpoint
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`endpoint` | string | - |
-`bearerToken?` | undefined &#124; string |   |
-
-**Returns:** *Promise‹ArrayBuffer›*
-
-___
-
 ###  input
 
 ▸ **input**(`input`: string): *Promise‹string›*
 
-*Defined in [node-extended.ts:33](https://github.com/Robbie-Cook/node-helper/blob/1331a69/src/node-extended.ts#L33)*
+*Defined in [node-extended.ts:32](https://github.com/Robbie-Cook/node-helper/blob/ea2edce/src/node-extended.ts#L32)*
 
 Read input from the user
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`input` | string |
+Name | Type | Description |
+------ | ------ | ------ |
+`input` | string |   |
 
 **Returns:** *Promise‹string›*
 
@@ -93,7 +77,7 @@ ___
 
 ▸ **isAnswerYes**(`input`: string): *boolean | null*
 
-*Defined in [node-extended.ts:52](https://github.com/Robbie-Cook/node-helper/blob/1331a69/src/node-extended.ts#L52)*
+*Defined in [node-extended.ts:51](https://github.com/Robbie-Cook/node-helper/blob/ea2edce/src/node-extended.ts#L51)*
 
 Whether the user accepted the input
 
@@ -104,3 +88,35 @@ Name | Type | Description |
 `input` | string |   |
 
 **Returns:** *boolean | null*
+
+## Object literals
+
+### `Const` NodeExtended
+
+### ▪ **NodeExtended**: *object*
+
+*Defined in [node-extended.ts:78](https://github.com/Robbie-Cook/node-helper/blob/ea2edce/src/node-extended.ts#L78)*
+
+###  execute
+
+• **execute**: *[execute](_node_extended_.md#execute)*
+
+*Defined in [node-extended.ts:78](https://github.com/Robbie-Cook/node-helper/blob/ea2edce/src/node-extended.ts#L78)*
+
+###  fetch
+
+• **fetch**: *[fetch](_node_extended_.md#fetch)*
+
+*Defined in [node-extended.ts:78](https://github.com/Robbie-Cook/node-helper/blob/ea2edce/src/node-extended.ts#L78)*
+
+###  input
+
+• **input**: *[input](_node_extended_.md#input)*
+
+*Defined in [node-extended.ts:78](https://github.com/Robbie-Cook/node-helper/blob/ea2edce/src/node-extended.ts#L78)*
+
+###  isAnswerYes
+
+• **isAnswerYes**: *[isAnswerYes](_node_extended_.md#isansweryes)*
+
+*Defined in [node-extended.ts:78](https://github.com/Robbie-Cook/node-helper/blob/ea2edce/src/node-extended.ts#L78)*
