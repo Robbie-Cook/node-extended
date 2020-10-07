@@ -1,0 +1,500 @@
+{
+	"id": 0,
+	"name": "node-extended",
+	"kind": 0,
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 1,
+			"name": "\"node-extended\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/Users/Robbie/Repos/node-extended/src/node-extended.ts",
+			"children": [
+				{
+					"id": 2,
+					"name": "execute",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 3,
+							"name": "execute",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Execute a command"
+							},
+							"parameters": [
+								{
+									"id": 4,
+									"name": "command",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node-extended.ts",
+							"line": 16,
+							"character": 22
+						}
+					]
+				},
+				{
+					"id": 5,
+					"name": "executeSync",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 6,
+							"name": "executeSync",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Execute a command syncronously"
+							},
+							"parameters": [
+								{
+									"id": 7,
+									"name": "command",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node-extended.ts",
+							"line": 32,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 14,
+					"name": "fetch",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 15,
+							"name": "fetch",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Fetch anything.\nUses node-fetch under the hood."
+							},
+							"parameters": [
+								{
+									"id": 16,
+									"name": "endpoint",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 17,
+									"name": "bearerToken",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "intrinsic",
+												"name": "string"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Response"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node-extended.ts",
+							"line": 72,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 8,
+					"name": "input",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 9,
+							"name": "input",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Read input from the user"
+							},
+							"parameters": [
+								{
+									"id": 10,
+									"name": "input",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node-extended.ts",
+							"line": 42,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 11,
+					"name": "isAnswerYes",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 12,
+							"name": "isAnswerYes",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Whether the user accepted the input"
+							},
+							"parameters": [
+								{
+									"id": 13,
+									"name": "input",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									{
+										"type": "intrinsic",
+										"name": "null"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node-extended.ts",
+							"line": 61,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 24,
+					"name": "NodeExtended",
+					"kind": 2097152,
+					"kindString": "Object literal",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "node-extended.ts",
+							"line": 89,
+							"character": 25
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "object"
+					}
+				},
+				{
+					"id": 18,
+					"name": "combined",
+					"kind": 2097152,
+					"kindString": "Object literal",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"children": [
+						{
+							"id": 19,
+							"name": "execute",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "node-extended.ts",
+									"line": 85,
+									"character": 26
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 2,
+								"name": "execute"
+							}
+						},
+						{
+							"id": 23,
+							"name": "executeSync",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "node-extended.ts",
+									"line": 85,
+									"character": 66
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 5,
+								"name": "executeSync"
+							}
+						},
+						{
+							"id": 22,
+							"name": "fetch",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "node-extended.ts",
+									"line": 85,
+									"character": 53
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 14,
+								"name": "fetch"
+							}
+						},
+						{
+							"id": 21,
+							"name": "input",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "node-extended.ts",
+									"line": 85,
+									"character": 46
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 8,
+								"name": "input"
+							}
+						},
+						{
+							"id": 20,
+							"name": "isAnswerYes",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "node-extended.ts",
+									"line": 85,
+									"character": 39
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 11,
+								"name": "isAnswerYes"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Variables",
+							"kind": 32,
+							"children": [
+								19,
+								23,
+								22,
+								21,
+								20
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node-extended.ts",
+							"line": 85,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "object"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						2,
+						5,
+						14,
+						8,
+						11
+					]
+				},
+				{
+					"title": "Object literals",
+					"kind": 2097152,
+					"children": [
+						24,
+						18
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "node-extended.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"kind": 1,
+			"children": [
+				1
+			]
+		}
+	]
+}
