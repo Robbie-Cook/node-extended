@@ -55,7 +55,7 @@ const { NodeExtended } = require('node-extended');
 
 ▸ **execute**(`command`: string): *Promise‹string›*
 
-*Defined in [node-extended.ts:16](https://github.com/Robbie-Cook/node-helper/blob/d61d8cd/src/node-extended.ts#L16)*
+*Defined in [node-extended.ts:16](https://github.com/Robbie-Cook/node-helper/blob/2b3affe/src/node-extended.ts#L16)*
 
 Execute a command
 
@@ -73,7 +73,7 @@ ___
 
 ▸ **executeSync**(`command`: string): *string*
 
-*Defined in [node-extended.ts:32](https://github.com/Robbie-Cook/node-helper/blob/d61d8cd/src/node-extended.ts#L32)*
+*Defined in [node-extended.ts:32](https://github.com/Robbie-Cook/node-helper/blob/2b3affe/src/node-extended.ts#L32)*
 
 Execute a command syncronously
 
@@ -91,7 +91,7 @@ ___
 
 ▸ **fetch**(`endpoint`: string, `bearerToken?`: undefined | string): *Promise‹Response›*
 
-*Defined in [node-extended.ts:72](https://github.com/Robbie-Cook/node-helper/blob/d61d8cd/src/node-extended.ts#L72)*
+*Defined in [node-extended.ts:72](https://github.com/Robbie-Cook/node-helper/blob/2b3affe/src/node-extended.ts#L72)*
 
 Fetch anything.
 Uses node-fetch under the hood.
@@ -111,7 +111,7 @@ ___
 
 ▸ **input**(`input`: string): *Promise‹string›*
 
-*Defined in [node-extended.ts:42](https://github.com/Robbie-Cook/node-helper/blob/d61d8cd/src/node-extended.ts#L42)*
+*Defined in [node-extended.ts:42](https://github.com/Robbie-Cook/node-helper/blob/2b3affe/src/node-extended.ts#L42)*
 
 Read input from the user
 
@@ -129,7 +129,7 @@ ___
 
 ▸ **isAnswerYes**(`input`: string): *boolean | null*
 
-*Defined in [node-extended.ts:61](https://github.com/Robbie-Cook/node-helper/blob/d61d8cd/src/node-extended.ts#L61)*
+*Defined in [node-extended.ts:61](https://github.com/Robbie-Cook/node-helper/blob/2b3affe/src/node-extended.ts#L61)*
 
 Whether the user accepted the input
 
@@ -147,7 +147,7 @@ Name | Type | Description |
 
 ### ▪ **NodeExtended**: *object*
 
-*Defined in [node-extended.ts:89](https://github.com/Robbie-Cook/node-helper/blob/d61d8cd/src/node-extended.ts#L89)*
+*Defined in [node-extended.ts:89](https://github.com/Robbie-Cook/node-helper/blob/2b3affe/src/node-extended.ts#L89)*
 
 ___
 
@@ -155,36 +155,36 @@ ___
 
 ### ▪ **combined**: *object*
 
-*Defined in [node-extended.ts:85](https://github.com/Robbie-Cook/node-helper/blob/d61d8cd/src/node-extended.ts#L85)*
+*Defined in [node-extended.ts:85](https://github.com/Robbie-Cook/node-helper/blob/2b3affe/src/node-extended.ts#L85)*
 
 ###  execute
 
 • **execute**: *[execute](_node_extended_.md#execute)*
 
-*Defined in [node-extended.ts:85](https://github.com/Robbie-Cook/node-helper/blob/d61d8cd/src/node-extended.ts#L85)*
+*Defined in [node-extended.ts:85](https://github.com/Robbie-Cook/node-helper/blob/2b3affe/src/node-extended.ts#L85)*
 
 ###  executeSync
 
 • **executeSync**: *[executeSync](_node_extended_.md#executesync)*
 
-*Defined in [node-extended.ts:85](https://github.com/Robbie-Cook/node-helper/blob/d61d8cd/src/node-extended.ts#L85)*
+*Defined in [node-extended.ts:85](https://github.com/Robbie-Cook/node-helper/blob/2b3affe/src/node-extended.ts#L85)*
 
 ###  fetch
 
 • **fetch**: *[fetch](_node_extended_.md#fetch)*
 
-*Defined in [node-extended.ts:85](https://github.com/Robbie-Cook/node-helper/blob/d61d8cd/src/node-extended.ts#L85)*
+*Defined in [node-extended.ts:85](https://github.com/Robbie-Cook/node-helper/blob/2b3affe/src/node-extended.ts#L85)*
 
 ###  input
 
 • **input**: *[input](_node_extended_.md#input)*
 
-*Defined in [node-extended.ts:85](https://github.com/Robbie-Cook/node-helper/blob/d61d8cd/src/node-extended.ts#L85)*
+*Defined in [node-extended.ts:85](https://github.com/Robbie-Cook/node-helper/blob/2b3affe/src/node-extended.ts#L85)*
 
 ###  isAnswerYes
 
 • **isAnswerYes**: *[isAnswerYes](_node_extended_.md#isansweryes)*
 
-*Defined in [node-extended.ts:85](https://github.com/Robbie-Cook/node-helper/blob/d61d8cd/src/node-extended.ts#L85)*
+*Defined in [node-extended.ts:85](https://github.com/Robbie-Cook/node-helper/blob/2b3affe/src/node-extended.ts#L85)*
 
 <!-- AUTO-GENERATED-CONTENT:END -->
