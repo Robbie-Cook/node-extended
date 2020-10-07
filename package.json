@@ -14,7 +14,7 @@
   "author": "Robbie Cook",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^14.0.23",
+    "@types/node": "^14.11.5",
     "child_process": "^1.0.2",
     "markdown-magic": "^1.0.0",
     "node": "^13.6.0",

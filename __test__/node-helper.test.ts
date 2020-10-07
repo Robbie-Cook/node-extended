@@ -16,3 +16,11 @@ test("Execute function legacy", async () => {
   const answer = await NodeHelperLegacy.execute(`echo "Hello"`);
   expect(answer).toMatch(/Hello/); // TODO: convert this to toBe
 });
+
+/**
+ * Testing the syncronous execute function
+ */
+test("Execute function sync", async () => {
+  const answer = NodeHelper.executeSync(`echo "Hello"`);
+  expect(answer).toMatch(/Hello/); // TODO: convert this to toBe
+});

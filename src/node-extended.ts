@@ -1,4 +1,4 @@
-import { exec } from "child_process";
+import { exec, execSync } from "child_process";
 import util from "util";
 import process from "process";
 import readline from "readline";
@@ -22,6 +22,16 @@ async function execute(command: string): Promise<string> {
       resolve(stdout);
     });
   });
+}
+
+/**
+ * Execute a command syncronously
+ *
+ * @param command
+ */
+function executeSync(command: string): string {
+  const buffer = execSync(command);
+  return buffer.toString();
 }
 
 /**
@@ -72,7 +82,8 @@ async function fetch(
   return response;
 }
 
-export default { execute, isAnswerYes, input, fetch };
+const combined = { execute, isAnswerYes, input, fetch, executeSync };
+export default combined;
 
 // For require();
-export const NodeExtended = { execute, isAnswerYes, input, fetch };
+export const NodeExtended = { ...combined };
