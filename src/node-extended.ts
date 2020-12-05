@@ -83,7 +83,14 @@ async function fetch(
   return response;
 }
 
-const combined = { execute, isAnswerYes, input, fetch, executeSync, ...Random };
+const combined = {
+  execute,
+  isAnswerYes,
+  input,
+  fetch,
+  executeSync,
+  getRandomInt: Random.getRandomInt,
+};
 export default combined;
 
 // For require();
