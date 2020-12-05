@@ -6,7 +6,7 @@
 
 ---
 
-Welcome to Node Helper! Contributions are always welcome, but please make an issue first.
+Welcome to NodeExtended! Contributions are always welcome, but please make an issue first.
 
 ## Getting started
 
