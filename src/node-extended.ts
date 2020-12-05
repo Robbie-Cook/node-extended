@@ -3,6 +3,7 @@ import util from "util";
 import process from "process";
 import readline from "readline";
 import nodeFetch, { Response } from "node-fetch";
+import Random from "./Random";
 
 /**
  * A collection of node helper functions
@@ -82,7 +83,7 @@ async function fetch(
   return response;
 }
 
-const combined = { execute, isAnswerYes, input, fetch, executeSync };
+const combined = { execute, isAnswerYes, input, fetch, executeSync, ...Random };
 export default combined;
 
 // For require();
