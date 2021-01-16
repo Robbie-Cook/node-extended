@@ -6,7 +6,15 @@
 
 ---
 
-Welcome to NodeExtended! Contributions are always welcome, but please make an issue first.
+NodeExtended makes difficult node functions easier.
+
+For example, to request input from the user:
+
+```typescript
+const response = await NodeExtended.input('What is your age?');
+```
+
+Contributions are always welcome, but please make an issue first.
 
 ## Getting started
 
