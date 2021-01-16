@@ -21,6 +21,12 @@ or, equally,
 const { NodeExtended } = require('node-extended');
 ```
 
+Then, you can use methods like so:
+
+```typescript
+const response = await NodeExtended.input('What is your age?');
+```
+
 #
 
 ## API
