@@ -14,9 +14,9 @@ import Random from "./Random";
  *
  * @param command
  */
-async function execute(command: string): Promise<string> {
+async function execute(command: string, dir?: string): Promise<string> {
   return new Promise((resolve, reject) => {
-    exec(command, (err, stdout, stderr) => {
+    exec(command, { cwd: dir }, (err, stdout, stderr) => {
       if (err) {
         reject(stderr);
       }
@@ -30,8 +30,8 @@ async function execute(command: string): Promise<string> {
  *
  * @param command
  */
-function executeSync(command: string): string {
-  const buffer = execSync(command);
+function executeSync(command: string, dir?: string): string {
+  const buffer = execSync(command, { cwd: dir });
   return buffer.toString();
 }
 
