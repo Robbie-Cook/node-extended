@@ -9,7 +9,7 @@
     "generate-docs": "md-magic --path 'README.md' --config ./markdown.config.js",
     "build": "tsc",
     "start": "tsc --watch",
-    "test": "jest"
+    "test": "npm run build && jest"
   },
   "release": {
     "plugins": [
